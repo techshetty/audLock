@@ -77,7 +77,7 @@ const showMsg=(audBuffer,key)=>{
         offset+=(chSize+8)
     }
     if(dStart==-1) throw new Error("No data chunk in audio");
-    // if(dLen<mbits.length) throw new Error("Audio is too small");
+    // if(dLen<mbits.length) throw new Error("small aud");
     const pcm=audBuffer.slice(dStart,dStart+dLen);
     const blen=(parseInt(decLSB(pcm,32).join(''), 2));
     const cipher=bitArr2Str(decLSB(pcm.slice(32),blen))

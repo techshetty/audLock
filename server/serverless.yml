@@ -1,0 +1,27 @@
+service: audlock
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  timeout: 60
+  memorySize: 1024
+  httpApi:
+    payload: '2.0'
+functions:
+  app:
+    handler: index.handler
+    events:
+      - httpApi:
+          path: /{proxy+}
+          method: ANY
+          cors: true
+plugins:
+  - serverless-offline
+custom:
+  serverless-offline:
+    httpPort: 8080
+    binary:
+      types:
+        - '*/*'
+        - 'audio/wav'
+        - 'application/octet-stream'
