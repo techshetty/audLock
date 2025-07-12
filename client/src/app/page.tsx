@@ -98,16 +98,16 @@ export default function AudLockApp() {
   };
 
   const handleFileChange = (e) => {
+    // console.log("fc")
     if (useSampleAudio) return;
-    
     const selectedFile = e.target.files[0];
     if (selectedFile) {
       const validationError = validateFile(selectedFile);
-      
+      e.target.value = '';
       if (validationError) {
         setError(validationError);
         setFile(null);
-        e.target.value = '';
+        // e.target.value = '';
       } else {
         setFile(selectedFile);
         setError('');
@@ -305,7 +305,7 @@ export default function AudLockApp() {
                   />
                   <span className="text-sm font-medium">Use Sample Audio</span>
                   <span className={`ml-2 text-xs ${themeClasses.textMuted}`}>
-                    (No WAV? No worries. I packed a spare. You’re welcome.
+                    ((No WAV? No worries. I packed a spare. You’re welcome.
 )
                   </span>
                 </label>
