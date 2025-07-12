@@ -305,7 +305,8 @@ export default function AudLockApp() {
                   />
                   <span className="text-sm font-medium">Use Sample Audio</span>
                   <span className={`ml-2 text-xs ${themeClasses.textMuted}`}>
-                    (Use provided sample audio file)
+                    (No WAV? No worries. I packed a spare. You’re welcome.
+)
                   </span>
                 </label>
                 {useSampleAudio && (
@@ -427,7 +428,7 @@ export default function AudLockApp() {
 
             <div className="mb-8">
               <label className={`block text-sm font-medium mb-3 ${themeClasses.text}`}>
-                Decryption Key
+                Encryption Key
                 <span className={`ml-2 text-xs ${themeClasses.textMuted}`}>
                   ({key.length}/{MAX_PASSWORD_LENGTH})
                 </span>

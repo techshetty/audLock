@@ -15,8 +15,7 @@ app.use(express.json());
 app.post('/hide',upload.single('file'),(req,res)=>{
   try{
     const{msg,key,smp}=req.body;
-    console.log(smp)
-    const fileBuf=(!smp)? (req.file?.buffer):fs.readFileSync(path.join(__dirname,'smp','sample_aud.wav'));
+    const fileBuf=(smp==='false')? (req.file?.buffer):fs.readFileSync(path.join(__dirname,'smp','sample_aud.wav'));
     if(!fileBuf||!msg||!key)return res.status(400).json({error:'Missing file, message, or key'});
     const out=hideMsg(fileBuf,msg,key);
     res.setHeader('Content-Type','audio/wav');
