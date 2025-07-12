@@ -109,7 +109,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-us-east-1-a1c6e6a3-83b6",
-                  "S3Key": "serverless/audlock/dev/1752332432821-2025-07-12T15:00:32.821Z/audlock.zip"
+                  "S3Key": "serverless/audlock/dev/1752341384041-2025-07-12T17:29:44.041Z/audlock.zip"
                 },
                 "Handler": "index.handler",
                 "Runtime": "nodejs18.x",
@@ -127,14 +127,14 @@
                 "AppLogGroup"
               ]
             },
-            "AppLambdaVersionFiO4IQkrpYfwh7NyYTyt4i6PowriphD2Y0hapaLrc": {
+            "AppLambdaVersionTiEfblrqH1j1Yg1T67NPgySfKvqnbi8AWZoqwjWFU": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "AppLambdaFunction"
                 },
-                "CodeSha256": "DUiMA2tDIMoH8gPPB7xQK8prtHvLjSdLsCdx3nlZ/cM="
+                "CodeSha256": "JBs0HHChN0bT5Q5wIvDfmcof83EO2n6CxzC3g7ZxOlg="
               }
             },
             "HttpApi": {
@@ -243,7 +243,7 @@
             "AppLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "AppLambdaVersionFiO4IQkrpYfwh7NyYTyt4i6PowriphD2Y0hapaLrc"
+                "Ref": "AppLambdaVersionTiEfblrqH1j1Yg1T67NPgySfKvqnbi8AWZoqwjWFU"
               },
               "Export": {
                 "Name": "sls-audlock-dev-AppLambdaFunctionQualifiedArn"
@@ -307,7 +307,7 @@
           "timeout": 60,
           "runtime": "nodejs18.x",
           "vpc": {},
-          "versionLogicalId": "AppLambdaVersionFiO4IQkrpYfwh7NyYTyt4i6PowriphD2Y0hapaLrc"
+          "versionLogicalId": "AppLambdaVersionTiEfblrqH1j1Yg1T67NPgySfKvqnbi8AWZoqwjWFU"
         }
       },
       "plugins": [
@@ -430,7 +430,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-us-east-1-a1c6e6a3-83b6",
-                "S3Key": "serverless/audlock/dev/1752332432821-2025-07-12T15:00:32.821Z/audlock.zip"
+                "S3Key": "serverless/audlock/dev/1752341384041-2025-07-12T17:29:44.041Z/audlock.zip"
               },
               "Handler": "index.handler",
               "Runtime": "nodejs18.x",
@@ -448,14 +448,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersionFiO4IQkrpYfwh7NyYTyt4i6PowriphD2Y0hapaLrc": {
+          "AppLambdaVersionTiEfblrqH1j1Yg1T67NPgySfKvqnbi8AWZoqwjWFU": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "DUiMA2tDIMoH8gPPB7xQK8prtHvLjSdLsCdx3nlZ/cM="
+              "CodeSha256": "JBs0HHChN0bT5Q5wIvDfmcof83EO2n6CxzC3g7ZxOlg="
             }
           },
           "HttpApi": {
@@ -564,7 +564,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionFiO4IQkrpYfwh7NyYTyt4i6PowriphD2Y0hapaLrc"
+              "Ref": "AppLambdaVersionTiEfblrqH1j1Yg1T67NPgySfKvqnbi8AWZoqwjWFU"
             },
             "Export": {
               "Name": "sls-audlock-dev-AppLambdaFunctionQualifiedArn"
@@ -630,12 +630,12 @@
     "serviceProviderAwsCfStackName": "audlock-dev",
     "serviceProviderAwsCfStackId": "arn:aws:cloudformation:us-east-1:202533536893:stack/audlock-dev/e2b6d560-5f2f-11f0-8185-0afff98af577",
     "serviceProviderAwsCfStackCreated": "2025-07-12T14:52:52.126Z",
-    "serviceProviderAwsCfStackUpdated": null,
-    "serviceProviderAwsCfStackStatus": "CREATE_COMPLETE",
+    "serviceProviderAwsCfStackUpdated": "2025-07-12T15:01:46.766Z",
+    "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
         "OutputKey": "AppLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:us-east-1:202533536893:function:audlock-dev-app:1",
+        "OutputValue": "arn:aws:lambda:us-east-1:202533536893:function:audlock-dev-app:2",
         "Description": "Current Lambda function version",
         "ExportName": "sls-audlock-dev-AppLambdaFunctionQualifiedArn"
       },
@@ -750,7 +750,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-us-east-1-a1c6e6a3-83b6",
-              "S3Key": "serverless/audlock/dev/1752332432821-2025-07-12T15:00:32.821Z/audlock.zip"
+              "S3Key": "serverless/audlock/dev/1752341384041-2025-07-12T17:29:44.041Z/audlock.zip"
             },
             "Handler": "index.handler",
             "Runtime": "nodejs18.x",
@@ -768,14 +768,14 @@
             "AppLogGroup"
           ]
         },
-        "AppLambdaVersionFiO4IQkrpYfwh7NyYTyt4i6PowriphD2Y0hapaLrc": {
+        "AppLambdaVersionTiEfblrqH1j1Yg1T67NPgySfKvqnbi8AWZoqwjWFU": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "AppLambdaFunction"
             },
-            "CodeSha256": "DUiMA2tDIMoH8gPPB7xQK8prtHvLjSdLsCdx3nlZ/cM="
+            "CodeSha256": "JBs0HHChN0bT5Q5wIvDfmcof83EO2n6CxzC3g7ZxOlg="
           }
         },
         "HttpApi": {
@@ -884,7 +884,7 @@
         "AppLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "AppLambdaVersionFiO4IQkrpYfwh7NyYTyt4i6PowriphD2Y0hapaLrc"
+            "Ref": "AppLambdaVersionTiEfblrqH1j1Yg1T67NPgySfKvqnbi8AWZoqwjWFU"
           },
           "Export": {
             "Name": "sls-audlock-dev-AppLambdaFunctionQualifiedArn"

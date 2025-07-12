@@ -44,9 +44,9 @@ app.get('/ping',(req,res)=>{
   return res.send("Im up");
 })
 const PORT=process.env.PORT||8080;
-app.listen(PORT,()=>{
-  console.log(`AudLock server is running on port ${PORT}`);
-});
+// app.listen(PORT,()=>{
+//   console.log(`AudLock server is running on port ${PORT}`);
+// });
 module.exports.handler=serverless(app,{
   binary: ['audio/wav', 'application/octet-stream', '*/*'],
 });

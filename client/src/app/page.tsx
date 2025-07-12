@@ -19,7 +19,7 @@ export default function AudLockApp() {
   const [dragActive, setDragActive] = useState(false);
   const [useSampleAudio, setUseSampleAudio] = useState(false);
   const {darkMode,setDarkMode,themeClasses}=useTheme();
-  const API_BASE = process.env.NEXT_PUBLIC_LOCALHOST;
+  const API_BASE = process.env.NEXT_PUBLIC_APIHOST;
   const MAX_FILE_SIZE = 4 * 1024 * 1024;
   const SAMPLE_AUDIO_URL = '/sample_aud.wav';
   const MAX_TEXT_LENGTH = 50;
@@ -512,7 +512,7 @@ export default function AudLockApp() {
           </div>
         </div>
       </main>
-      <Footer dev="techshetty"/>
+      <Footer/>
     </div>
   );
 }
