@@ -56,6 +56,7 @@ export default function AudLockApp() {
   };
 
   const validateFile = (file) => {
+    alert(file.type);
     if (!file.type.startsWith('audio/')) {
       return 'Please select an audio file';
     }
