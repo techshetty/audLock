@@ -338,7 +338,7 @@ export default function AudLockApp() {
               >
                 <input
                   type="file"
-                  accept="audio/wav"
+                  accept=".wav,audio/wav,audio/x-wav,audio/x-pn-wav"
                   onChange={handleFileChange}
                   className="hidden"
                   id="file-upload"
