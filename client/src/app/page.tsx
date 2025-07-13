@@ -189,7 +189,8 @@ export default function AudLockApp() {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'stego.wav';
+      const rs = Math.random().toString(36).substring(2, 6);
+      a.download = `stego_${Date.now()}_${rs}.wav`;
       document.body.appendChild(a);
       a.click();
       window.URL.revokeObjectURL(url);
