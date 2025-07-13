@@ -305,7 +305,7 @@ export default function AudLockApp() {
                   />
                   <span className="text-sm font-medium">Use Sample Audio</span>
                   <span className={`ml-2 text-xs ${themeClasses.textMuted}`}>
-                    ((No WAV? No worries. I packed a spare. You’re welcome.
+                    (No WAV? No worries. I packed a spare. You&apos;re welcome.
 )
                   </span>
                 </label>
@@ -428,7 +428,7 @@ export default function AudLockApp() {
 
             <div className="mb-8">
               <label className={`block text-sm font-medium mb-3 ${themeClasses.text}`}>
-                Encryption Key
+                Secret Key
                 <span className={`ml-2 text-xs ${themeClasses.textMuted}`}>
                   ({key.length}/{MAX_PASSWORD_LENGTH})
                 </span>
@@ -438,7 +438,7 @@ export default function AudLockApp() {
                   type={showKey ? 'text' : 'password'}
                   value={key}
                   onChange={handleKeyChange}
-                  placeholder="Enter your encryption key..."
+                  placeholder="Enter your secret key..."
                   className={`w-full px-4 py-3 rounded-xl pr-12 transition-all duration-300 ${themeClasses.inputBg} ${themeClasses.inputBorder} ${themeClasses.text} ${themeClasses.inputFocus} placeholder-gray-400 focus:outline-none focus:ring-2 border ${
                     key.length === MAX_PASSWORD_LENGTH ? 'border-yellow-500' : ''
                   }`}
