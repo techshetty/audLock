@@ -35,5 +35,5 @@
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/audlock.git
+git clone https://github.com/techshetty/audlock.git
 cd audlock
